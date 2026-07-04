@@ -1,14 +1,16 @@
-# 🎯 Smart Queue Management System
+# 🎯 Smart Queue Tracker
 
-A **web-based Smart Queue System** built with **Python Flask** and **MongoDB** for efficient token management, live tracking, and staff analytics.  
-Designed to save time, reduce waiting, and provide a smooth queue experience for both users and staff.
+A **modern web-based Queue Management System** developed using **Python (Flask)**, **MongoDB**, **HTML**, **CSS**, and **JavaScript**. The application streamlines queue management by allowing users to generate queue tokens, monitor their position in real time, and helping staff efficiently manage customer flow through an intuitive dashboard.
 
 ---
 
 ## 🚀 Overview
 
-The Smart Queue Management System allows users to generate tokens, monitor their turn with live countdowns, and allows staff to manage active, completed, and cancelled tokens.  
-It provides real-time updates, analytics for staff, and an interactive, responsive interface.
+The **Smart Queue Tracker** is designed to minimize waiting time and improve customer service in places such as **hospitals, banks, government offices, clinics, and service centers**.
+
+Users can generate a digital queue token and track their current position, while staff can manage the queue by serving, completing, or cancelling tokens through a dedicated dashboard. The system provides a simple, responsive, and user-friendly interface, making queue management more organized and efficient.
+
+This project demonstrates practical implementation of **full-stack web development**, integrating a Flask backend with MongoDB for data storage and a responsive frontend for an enhanced user experience.
 
 ---
 
