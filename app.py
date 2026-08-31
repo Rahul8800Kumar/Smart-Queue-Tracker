@@ -7,12 +7,19 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
+import os
+
 # --- MongoDB Setup ---
-client = MongoClient("mongodb://localhost:27017/")
+MONGODB_URI = os.getenv("MONGODB_URI")
+
+if not MONGODB_URI:
+    raise Exception("MONGODB_URI environment variable not set")
+
+client = MongoClient(MONGODB_URI)
+
 db = client["smartqueue"]
 tokens_collection = db["tokens"]
 staff_collection = db["staff"]
-
 # --- Flask-Login Setup ---
 login_manager = LoginManager()
 login_manager.login_view = "home"
